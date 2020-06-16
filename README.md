@@ -1,5 +1,7 @@
 This is a [Svelte](https://svelte.dev) apps.
 
+# Try the demo here : [codyadam.github.io/Svelte-Resizable-Panel](https://codyadam.github.io/Svelte-Resizable-Panel/)
+
 ## What is this ?
 
 This is a single Svelte component that allow you to make custom resize bar for your panels.

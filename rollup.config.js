@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import autoPreprocess from "svelte-preprocess";
+import svelteStaticHtml from "rollup-plugin-svelte-static-html";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -13,7 +14,7 @@ export default {
         sourcemap: true,
         format: "iife",
         name: "app",
-        file: "public/build/bundle.js",
+        file: "dist/app.js",
     },
     plugins: [
         svelte({
@@ -25,6 +26,11 @@ export default {
             css: (css) => {
                 css.write("public/build/bundle.css");
             },
+        }),
+        svelteStaticHtml({
+            component: "src/App.svelte",
+            output: "dist/index.html",
+            inlineCss: true,
         }),
 
         // If you have external dependencies installed from

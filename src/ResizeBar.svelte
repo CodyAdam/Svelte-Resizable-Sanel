@@ -1,5 +1,5 @@
 <script lang="typescript">
-  export let isVertical: boolean = true;
+  export let isVertical: boolean = false;
   export let max: number = 90;
   export let min: number = 10;
   export let thickness: number = 5;

@@ -20,6 +20,6 @@ This is a single Svelte component that allow you to make custom resize bar for y
 -   `minPos` the minimum % position of the bar (10% by default)
 -   `maxPos` the maximum % position of the bar (90% by default)
 
-![Screen of the code](https://github.com/CodyAdam/React-Resizable-Panel/blob/master/ScreenCode.png?raw=true)
+![Screen of the code](https://github.com/CodyAdam/Svelte-Resizable-Panel/blob/master/ScreenCode.png?raw=true)
 
 ![Gif demo](https://github.com/CodyAdam/React-Resizable-Panel/blob/master/demo.gif?raw=true)
